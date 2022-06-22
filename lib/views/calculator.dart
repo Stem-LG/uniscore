@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:uniscore/controllers/scoreController.dart';
 import 'package:uniscore/views/components/drawer.dart';
@@ -9,11 +10,11 @@ class CalculatorPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    ScoreController scoreC = ScoreController();
+    ScoreController scoreC = new ScoreController();
     List<Widget> Fields = [];
     String sectionName = "Default";
     if (Get.currentRoute == "/info") {
-      sectionName = "Information Technology";
+      sectionName = "Information Technology - not available";
       Fields = [
         NumberField(
             label: "Average",
@@ -311,12 +312,17 @@ class CalculatorPage extends StatelessWidget {
       ];
     }
     double score = 0.0;
+    final _scaffoldKey = GlobalKey<ScaffoldState>();
     return Scaffold(
+      key: _scaffoldKey,
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           Get.back();
         },
-        child: Icon(Icons.arrow_back),
+        child: SvgPicture.asset(
+          "assets/icons/arrow-left.svg",
+          color: Get.theme.scaffoldBackgroundColor,
+        ),
       ),
       body: Center(
         child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
@@ -354,8 +360,18 @@ class CalculatorPage extends StatelessWidget {
               )),
         ]),
       ),
-      drawer: MainDrawer,
-      appBar: AppBar(),
+      drawer: MainDrawer(scaffoldKey: _scaffoldKey,),
+      appBar: AppBar(
+        leading: IconButton(
+          icon: SvgPicture.asset(
+            "assets/icons/menu.svg",
+            color: Get.theme.scaffoldBackgroundColor,
+          ),
+          onPressed: () {
+            _scaffoldKey.currentState!.openDrawer();
+          },
+        ),
+      ),
     );
   }
 }

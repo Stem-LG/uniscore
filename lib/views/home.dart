@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:uniscore/views/components/drawer.dart';
 
@@ -7,7 +8,9 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final _scaffoldKey = GlobalKey<ScaffoldState>();
     return Scaffold(
+      key: _scaffoldKey,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -20,8 +23,18 @@ class HomePage extends StatelessWidget {
           ],
         ),
       ),
-      drawer: MainDrawer,
-      appBar: AppBar(),
+      drawer: MainDrawer(scaffoldKey: _scaffoldKey),
+      appBar: AppBar(
+        leading: IconButton(
+          icon: SvgPicture.asset(
+            "assets/icons/menu.svg",
+            color: Get.theme.scaffoldBackgroundColor,
+          ),
+          onPressed: () {
+            _scaffoldKey.currentState!.openDrawer();
+          },
+        ),
+      ),
     );
   }
 }
@@ -31,16 +44,22 @@ class SectionChooser extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final sections = {"info": "/info", "info-old": "/info-old", "tech": "/tech", "ecogest": "/ecogest", "science": "/science", "math": "/math", "lettres": "/lettres", "sport": "/sport"};
+    final sections = {"Information Technology": "/info", "Information Technology - old": "/info-old", "Technology": "/tech", "Economy & managment": "/ecogest", "Science": "/science", "Math": "/math", "Literature": "/lettres", "Sport": "/sport"};
 
     List<Widget> processedSections = [];
 
     sections.forEach((key, value) {
       processedSections.add(Container(
         margin: EdgeInsets.all(10),
-        width: 150,
+        width: 450,
+        height: 50,
         child: OutlinedButton(
-          style: OutlinedButton.styleFrom(side: BorderSide(color: Get.theme.primaryColor, width: 2)),
+          style: OutlinedButton.styleFrom(
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+              side: BorderSide(
+                color: Get.theme.primaryColor,
+                width: 2,
+              )),
           child: Text(
             key,
             style: TextStyle(fontSize: 30),
@@ -52,6 +71,6 @@ class SectionChooser extends StatelessWidget {
       ));
     });
 
-    return Container(width: 600, child: Wrap(alignment: WrapAlignment.center, children: processedSections));
+    return Container(width: 950, child: Wrap(alignment: WrapAlignment.center, children: processedSections));
   }
 }
