@@ -376,6 +376,7 @@ class CalculatorPage extends StatelessWidget {
         scaffoldKey: _scaffoldKey,
       ),
       appBar: AppBar(
+        title: Center(child: Text("Uniscore")),
         leading: IconButton(
           icon: SvgPicture.asset(
             "assets/icons/menu.svg",

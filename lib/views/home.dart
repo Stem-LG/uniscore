@@ -33,6 +33,7 @@ class HomePage extends StatelessWidget {
         ),
       )),
       appBar: AppBar(
+        title: Center(child: Text("Uniscore")),
         actions: [
           TextButton(
               onPressed: () {

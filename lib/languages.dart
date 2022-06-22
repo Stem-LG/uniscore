@@ -102,7 +102,7 @@ class Languages extends Translations {
           "Sport-SP": "إختصاص رياضي",
           "Physical Edu": "تربية بدنية",
           "Calculate": "احسب",
-          "FG:": "الصيغة الإجمالية:",
+          "FG:": ":الصيغة الإجمالية",
           "Section: ": "الشعبة: ",
         },
       };
