@@ -10,7 +10,7 @@ class NumberField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 120,
+      width: 140,
       height: 50,
       margin: const EdgeInsets.all(10),
       child: TextField(

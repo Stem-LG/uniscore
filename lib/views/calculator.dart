@@ -14,298 +14,298 @@ class CalculatorPage extends StatelessWidget {
     List<Widget> Fields = [];
     String sectionName = "Default";
     if (Get.currentRoute == "/info") {
-      sectionName = "Information Technology - not available";
+      sectionName = "Information Technology - not available".tr;
       Fields = [
         NumberField(
-            label: "Average",
+            label: "Average".tr,
             onChange: (v) {
               scoreC.grades["average"] = int.parse(v);
             }),
         NumberField(
-            label: "Math",
+            label: "Math".tr,
             onChange: (v) {
               scoreC.grades["math"] = int.parse(v);
             }),
         NumberField(
-            label: "Algorithms",
+            label: "Algorithms".tr,
             onChange: (v) {
               scoreC.grades["algorithms"] = int.parse(v);
             }),
         NumberField(
-            label: "Physics",
+            label: "Physics".tr,
             onChange: (v) {
               scoreC.grades["physics"] = int.parse(v);
             }),
         NumberField(
-            label: "STI",
+            label: "STI".tr,
             onChange: (v) {
               scoreC.grades["sti"] = int.parse(v);
             }),
         NumberField(
-            label: "French",
+            label: "French".tr,
             onChange: (v) {
               scoreC.grades["french"] = int.parse(v);
             }),
         NumberField(
-            label: "English",
+            label: "English".tr,
             onChange: (v) {
               scoreC.grades["english"] = int.parse(v);
             })
       ];
     } else if (Get.currentRoute == "/info-old") {
-      sectionName = "Information Technology - old";
+      sectionName = "Information Technology - old".tr;
       Fields = [
         NumberField(
-            label: "Average",
+            label: "Average".tr,
             onChange: (v) {
               scoreC.grades["average"] = int.parse(v);
             }),
         NumberField(
-            label: "Math",
+            label: "Math".tr,
             onChange: (v) {
               scoreC.grades["math"] = int.parse(v);
             }),
         NumberField(
-            label: "Algorithms",
+            label: "Algorithms".tr,
             onChange: (v) {
               scoreC.grades["algorithms"] = int.parse(v);
             }),
         NumberField(
-            label: "Physics",
+            label: "Physics".tr,
             onChange: (v) {
               scoreC.grades["physics"] = int.parse(v);
             }),
         NumberField(
-            label: "TIC",
+            label: "TIC".tr,
             onChange: (v) {
               scoreC.grades["tic"] = int.parse(v);
             }),
         NumberField(
-            label: "DataBases",
+            label: "DataBases".tr,
             onChange: (v) {
               scoreC.grades["db"] = int.parse(v);
             }),
         NumberField(
-            label: "French",
+            label: "French".tr,
             onChange: (v) {
               scoreC.grades["french"] = int.parse(v);
             }),
         NumberField(
-            label: "English",
+            label: "English".tr,
             onChange: (v) {
               scoreC.grades["english"] = int.parse(v);
             })
       ];
     } else if (Get.currentRoute == "/science") {
-      sectionName = "Experemental Science";
+      sectionName = "Experemental Science".tr;
       Fields = [
         NumberField(
-            label: "Average",
+            label: "Average".tr,
             onChange: (v) {
               scoreC.grades["average"] = int.parse(v);
             }),
         NumberField(
-            label: "Math",
+            label: "Math".tr,
             onChange: (v) {
               scoreC.grades["math"] = int.parse(v);
             }),
         NumberField(
-            label: "Physics",
+            label: "Physics".tr,
             onChange: (v) {
               scoreC.grades["physics"] = int.parse(v);
             }),
         NumberField(
-            label: "science",
+            label: "Science".tr,
             onChange: (v) {
               scoreC.grades["science"] = int.parse(v);
             }),
         NumberField(
-            label: "French",
+            label: "French".tr,
             onChange: (v) {
               scoreC.grades["french"] = int.parse(v);
             }),
         NumberField(
-            label: "English",
+            label: "English".tr,
             onChange: (v) {
               scoreC.grades["english"] = int.parse(v);
             })
       ];
     } else if (Get.currentRoute == "/tech") {
-      sectionName = "Technology";
+      sectionName = "Technology".tr;
       Fields = [
         NumberField(
-            label: "Average",
+            label: "Average".tr,
             onChange: (v) {
               scoreC.grades["average"] = int.parse(v);
             }),
         NumberField(
-            label: "Technology",
+            label: "Technology".tr,
             onChange: (v) {
               scoreC.grades["algorithms"] = int.parse(v);
             }),
         NumberField(
-            label: "Math",
+            label: "Math".tr,
             onChange: (v) {
               scoreC.grades["math"] = int.parse(v);
             }),
         NumberField(
-            label: "Physics",
+            label: "Physics".tr,
             onChange: (v) {
               scoreC.grades["physics"] = int.parse(v);
             }),
         NumberField(
-            label: "French",
+            label: "French".tr,
             onChange: (v) {
               scoreC.grades["french"] = int.parse(v);
             }),
         NumberField(
-            label: "English",
+            label: "English".tr,
             onChange: (v) {
               scoreC.grades["english"] = int.parse(v);
             })
       ];
     } else if (Get.currentRoute == "/math") {
-      sectionName = "Mathematics";
+      sectionName = "Mathematics".tr;
       Fields = [
         NumberField(
-            label: "Average",
+            label: "Average".tr,
             onChange: (v) {
               scoreC.grades["average"] = int.parse(v);
             }),
         NumberField(
-            label: "Math",
+            label: "Math".tr,
             onChange: (v) {
               scoreC.grades["math"] = int.parse(v);
             }),
         NumberField(
-            label: "Physics",
+            label: "Physics".tr,
             onChange: (v) {
               scoreC.grades["physics"] = int.parse(v);
             }),
         NumberField(
-            label: "science",
+            label: "science".tr,
             onChange: (v) {
               scoreC.grades["science"] = int.parse(v);
             }),
         NumberField(
-            label: "French",
+            label: "French".tr,
             onChange: (v) {
               scoreC.grades["french"] = int.parse(v);
             }),
         NumberField(
-            label: "English",
+            label: "English".tr,
             onChange: (v) {
               scoreC.grades["english"] = int.parse(v);
             })
       ];
     } else if (Get.currentRoute == "/lettres") {
-      sectionName = "Literature";
+      sectionName = "Literature".tr;
       Fields = [
         NumberField(
-            label: "Average",
+            label: "Average".tr,
             onChange: (v) {
               scoreC.grades["average"] = int.parse(v);
             }),
         NumberField(
-            label: "Arabic",
+            label: "Arabic".tr,
             onChange: (v) {
               scoreC.grades["arab"] = int.parse(v);
             }),
         NumberField(
-            label: "Philosophy",
+            label: "Philosophy".tr,
             onChange: (v) {
               scoreC.grades["physics"] = int.parse(v);
             }),
         NumberField(
-            label: "his/geo",
+            label: "His/Geo".tr,
             onChange: (v) {
               scoreC.grades["his/geo"] = int.parse(v);
             }),
         NumberField(
-            label: "French",
+            label: "French".tr,
             onChange: (v) {
               scoreC.grades["french"] = int.parse(v);
             }),
         NumberField(
-            label: "English",
+            label: "English".tr,
             onChange: (v) {
               scoreC.grades["english"] = int.parse(v);
             })
       ];
     } else if (Get.currentRoute == "/ecogest") {
-      sectionName = "Economy & Management";
+      sectionName = "Economy & Management".tr;
       Fields = [
         NumberField(
-            label: "Average",
+            label: "Average".tr,
             onChange: (v) {
               scoreC.grades["average"] = int.parse(v);
             }),
         NumberField(
-            label: "Economy",
+            label: "Economy".tr,
             onChange: (v) {
               scoreC.grades["economy"] = int.parse(v);
             }),
         NumberField(
-            label: "Management",
+            label: "Management".tr,
             onChange: (v) {
               scoreC.grades["management"] = int.parse(v);
             }),
         NumberField(
-            label: "Math",
+            label: "Math".tr,
             onChange: (v) {
               scoreC.grades["math"] = int.parse(v);
             }),
         NumberField(
-            label: "His/Geo",
+            label: "His/Geo".tr,
             onChange: (v) {
               scoreC.grades["his/geo"] = int.parse(v);
             }),
         NumberField(
-            label: "French",
+            label: "French".tr,
             onChange: (v) {
               scoreC.grades["french"] = int.parse(v);
             }),
         NumberField(
-            label: "English",
+            label: "English".tr,
             onChange: (v) {
               scoreC.grades["english"] = int.parse(v);
             })
       ];
     } else if (Get.currentRoute == "/sport") {
-      sectionName = "Sport";
+      sectionName = "Sport".tr;
       Fields = [
         NumberField(
-            label: "Average",
+            label: "Average".tr,
             onChange: (v) {
               scoreC.grades["average"] = int.parse(v);
             }),
         NumberField(
-            label: "Science",
+            label: "Science".tr,
             onChange: (v) {
               scoreC.grades["science"] = int.parse(v);
             }),
         NumberField(
-            label: "Sport-SP",
+            label: "Sport-SP".tr,
             onChange: (v) {
               scoreC.grades["physics"] = int.parse(v);
             }),
         NumberField(
-            label: "Physical edu",
+            label: "Physical Edu".tr,
             onChange: (v) {
               scoreC.grades["science"] = int.parse(v);
             }),
         NumberField(
-            label: "Philosophy",
+            label: "Philosophy".tr,
             onChange: (v) {
               scoreC.grades["philosophy"] = int.parse(v);
             }),
         NumberField(
-            label: "French",
+            label: "French".tr,
             onChange: (v) {
               scoreC.grades["french"] = int.parse(v);
             }),
         NumberField(
-            label: "English",
+            label: "English".tr,
             onChange: (v) {
               scoreC.grades["english"] = int.parse(v);
             })
@@ -325,42 +325,56 @@ class CalculatorPage extends StatelessWidget {
         ),
       ),
       body: Center(
-        child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-          Text(
-            "Section: ${sectionName}",
-            style: TextStyle(fontSize: 34, fontWeight: FontWeight.bold, color: Get.theme.primaryColor),
-          ),
-          Container(
-            width: 600,
-            child: Wrap(
-              alignment: WrapAlignment.center,
-              children: Fields,
+        child: Container(
+          width: 950,
+          child: ListView(shrinkWrap: true, children: [
+            Center(
+              child: Text(
+                "Section: ".tr + sectionName,
+                textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 34, fontWeight: FontWeight.bold, color: Get.theme.primaryColor),
+              ),
             ),
-          ),
-          SizedBox(
-            height: 15,
-          ),
-          Container(
-            height: 35,
-            child: ElevatedButton(
-                onPressed: () {
-                  scoreC.calculateScore(section: Get.currentRoute.substring(1));
-                },
-                child: Text(
-                  "Calculate",
-                  style: TextStyle(fontSize: 19, fontWeight: FontWeight.w500),
+            Center(
+              child: Container(
+                width: 950,
+                child: Wrap(
+                  alignment: WrapAlignment.center,
+                  children: Fields,
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 15,
+            ),
+            Center(
+              child: Container(
+                height: 35,
+                child: ElevatedButton(
+                    onPressed: () {
+                      scoreC.calculateScore(section: Get.currentRoute.substring(1));
+                    },
+                    child: Text(
+                      "Calculate".tr,
+                      style: TextStyle(fontSize: 19, fontWeight: FontWeight.w500),
+                    )),
+              ),
+            ),
+            SizedBox(
+              height: 15,
+            ),
+            Obx(() => Center(
+                  child: Text(
+                    'FG:'.tr + scoreC.score.value.toString(),
+                    style: TextStyle(fontSize: 30, fontWeight: FontWeight.w500, color: Get.theme.primaryColor),
+                  ),
                 )),
-          ),
-          SizedBox(
-            height: 15,
-          ),
-          Obx(() => Text(
-                'Score: ${scoreC.score.value}',
-                style: TextStyle(fontSize: 30, fontWeight: FontWeight.w500, color: Get.theme.primaryColor),
-              )),
-        ]),
+          ]),
+        ),
       ),
-      drawer: MainDrawer(scaffoldKey: _scaffoldKey,),
+      drawer: MainDrawer(
+        scaffoldKey: _scaffoldKey,
+      ),
       appBar: AppBar(
         leading: IconButton(
           icon: SvgPicture.asset(
@@ -371,6 +385,23 @@ class CalculatorPage extends StatelessWidget {
             _scaffoldKey.currentState!.openDrawer();
           },
         ),
+        actions: [
+          TextButton(
+              onPressed: () {
+                Get.updateLocale(Locale("ar", "AR"));
+              },
+              child: Text("🇹🇳")),
+          TextButton(
+              onPressed: () {
+                Get.updateLocale(Locale("fr", "FR"));
+              },
+              child: Text("🇫🇷")),
+          TextButton(
+              onPressed: () {
+                Get.updateLocale(Locale("en", "GB"));
+              },
+              child: Text("🇬🇧"))
+        ],
       ),
     );
   }

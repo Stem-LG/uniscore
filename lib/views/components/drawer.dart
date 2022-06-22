@@ -13,14 +13,14 @@ class MainDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     List<ListTile> processListTiles() {
       Map<String, String> Items = {
-        "Information Technology": "/info",
-        "Information Technology - old": "/info-old",
-        "Technology": "/tech",
-        "Economy & Management": "/ecogest",
-        "Science": "/science",
-        "Math": "/math",
-        "Literature": "/lettres",
-        "Sport": "/sport"
+        "Information Technology".tr: "/info",
+        "Information Technology - old".tr: "/info-old",
+        "Technology".tr: "/tech",
+        "Economy & Management".tr: "/ecogest",
+        "Science".tr: "/science",
+        "Math".tr: "/math",
+        "Literature".tr: "/lettres",
+        "Sport".tr: "/sport"
       };
       List<ListTile> result = [];
 
@@ -43,63 +43,65 @@ class MainDrawer extends StatelessWidget {
     }
 
     return Drawer(
-      child: Column(
-        mainAxisSize: MainAxisSize.max,
-        children: [
-          AppBar(
-            backgroundColor: Colors.transparent,
-            shadowColor: Colors.transparent,
-            leading: IconButton(
-              icon: SvgPicture.asset(
-                "assets/icons/menu.svg",
-                color: Get.theme.primaryColor,
-              ),
-              onPressed: () {
-                Get.back();
-              },
+        child: Column(
+      children: [
+        AppBar(
+          backgroundColor: Colors.transparent,
+          shadowColor: Colors.transparent,
+          leading: IconButton(
+            icon: SvgPicture.asset(
+              "assets/icons/menu.svg",
+              color: Get.theme.primaryColor,
             ),
-          ),
-          ListTile(
-            title: Text("Home"),
-            onTap: () {
-              Get.offAllNamed("/");
+            onPressed: () {
+              Get.back();
             },
           ),
-          ...processListTiles(),
-          Expanded(
-            child: Align(
-                alignment: Alignment.bottomCenter,
-                child: Text(
-                  "Made by Louay Ghanney",
-                  style: TextStyle(color: Get.theme.primaryColor),
-                )),
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
+        ),
+        Expanded(
+          child: ListView(
             children: [
-              IconButton(
-                  tooltip: "Email",
-                  onPressed: () async {
-                    await launchUrl(Uri.parse("mailto:louayghanney71@gmail.com"));
-                  },
-                  icon: SvgPicture.asset("assets/icons/at.svg")),
-              IconButton(
-                  tooltip: "Discord",
-                  onPressed: () {
-                    FlutterClipboard.copy("Stem#1287").then((value) =>
-                        Get.snackbar("Stem#1287", "Copied to clipboard", colorText: Get.theme.primaryColor, backgroundColor: Get.theme.dialogBackgroundColor, snackPosition: SnackPosition.BOTTOM, duration: Duration(seconds: 2), maxWidth: 250));
-                  },
-                  icon: SvgPicture.asset("assets/icons/discord.svg")),
-              IconButton(
-                  tooltip: "Github",
-                  onPressed: () async {
-                    launchUrl(Uri.parse("https://github.com/Stem-LG/"));
-                  },
-                  icon: SvgPicture.asset("assets/icons/github.svg")),
+              ListTile(
+                title: Text("Home".tr),
+                onTap: () {
+                  Get.offAllNamed("/");
+                },
+              ),
+              ...processListTiles(),
             ],
           ),
-        ],
-      ),
-    );
+        ),
+        Align(
+            alignment: Alignment.bottomCenter,
+            child: Text(
+              "Made by Louay Ghanney".tr,
+              style: TextStyle(color: Get.theme.primaryColor),
+            )),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            IconButton(
+                tooltip: "Email",
+                onPressed: () async {
+                  await launchUrl(Uri.parse("mailto:louayghanney71@gmail.com"));
+                },
+                icon: SvgPicture.asset("assets/icons/at.svg")),
+            IconButton(
+                tooltip: "Discord",
+                onPressed: () {
+                  FlutterClipboard.copy("Stem#1287").then((value) =>
+                      Get.snackbar("Stem#1287", "Copied to clipboard".tr, colorText: Get.theme.primaryColor, backgroundColor: Get.theme.dialogBackgroundColor, snackPosition: SnackPosition.BOTTOM, duration: Duration(seconds: 2), maxWidth: 250));
+                },
+                icon: SvgPicture.asset("assets/icons/discord.svg")),
+            IconButton(
+                tooltip: "Github",
+                onPressed: () async {
+                  launchUrl(Uri.parse("https://github.com/Stem-LG/"));
+                },
+                icon: SvgPicture.asset("assets/icons/github.svg")),
+          ],
+        ),
+      ],
+    ));
   }
 }

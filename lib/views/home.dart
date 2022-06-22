@@ -9,22 +9,47 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final _scaffoldKey = GlobalKey<ScaffoldState>();
+
     return Scaffold(
       key: _scaffoldKey,
+      drawer: MainDrawer(
+        scaffoldKey: _scaffoldKey,
+      ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          child: Container(
+        width: 1100,
+        child: ListView(
+          shrinkWrap: true,
           children: [
-            Text(
-              "Choose Section:",
-              style: TextStyle(fontSize: 34, fontWeight: FontWeight.bold, color: Get.theme.primaryColor),
+            Center(
+              child: Text(
+                "Choose Section:".tr,
+                textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Get.theme.primaryColor),
+              ),
             ),
             SectionChooser(),
           ],
         ),
-      ),
-      drawer: MainDrawer(scaffoldKey: _scaffoldKey),
+      )),
       appBar: AppBar(
+        actions: [
+          TextButton(
+              onPressed: () {
+                Get.updateLocale(Locale("ar", "AR"));
+              },
+              child: Text("🇹🇳")),
+          TextButton(
+              onPressed: () {
+                Get.updateLocale(Locale("fr", "FR"));
+              },
+              child: Text("🇫🇷")),
+          TextButton(
+              onPressed: () {
+                Get.updateLocale(Locale("en", "GB"));
+              },
+              child: Text("🇬🇧"))
+        ],
         leading: IconButton(
           icon: SvgPicture.asset(
             "assets/icons/menu.svg",
@@ -44,14 +69,23 @@ class SectionChooser extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final sections = {"Information Technology": "/info", "Information Technology - old": "/info-old", "Technology": "/tech", "Economy & managment": "/ecogest", "Science": "/science", "Math": "/math", "Literature": "/lettres", "Sport": "/sport"};
+    final sections = {
+      "Information Technology".tr: "/info",
+      "Information Technology - old".tr: "/info-old",
+      "Technology".tr: "/tech",
+      "Economy & Management".tr: "/ecogest",
+      "Science".tr.tr: "/science",
+      "Math".tr: "/math",
+      "Literature".tr: "/lettres",
+      "Sport".tr: "/sport"
+    };
 
     List<Widget> processedSections = [];
 
     sections.forEach((key, value) {
       processedSections.add(Container(
         margin: EdgeInsets.all(10),
-        width: 450,
+        width: 320,
         height: 50,
         child: OutlinedButton(
           style: OutlinedButton.styleFrom(
@@ -62,7 +96,7 @@ class SectionChooser extends StatelessWidget {
               )),
           child: Text(
             key,
-            style: TextStyle(fontSize: 30),
+            style: TextStyle(fontSize: 20),
           ),
           onPressed: () {
             Get.toNamed(value);
@@ -71,6 +105,6 @@ class SectionChooser extends StatelessWidget {
       ));
     });
 
-    return Container(width: 950, child: Wrap(alignment: WrapAlignment.center, children: processedSections));
+    return Wrap(alignment: WrapAlignment.center, children: processedSections);
   }
 }

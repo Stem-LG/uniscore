@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:uniscore/languages.dart';
 import 'package:uniscore/views/calculator.dart';
 import 'package:uniscore/views/home.dart';
 
 void main() {
   runApp(GetMaterialApp(
+    translations: Languages(),
+    locale: Get.deviceLocale,
+    fallbackLocale: const Locale('fr', 'FR'),
     theme: ThemeData(
       useMaterial3: false,
     ),
