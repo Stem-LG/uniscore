@@ -35,7 +35,6 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: Center(child: Text("Uniscore")),
         actions: [
-          DropdownButton(items: [DropdownMenuItem(child: Text("Arabic".tr)),DropdownMenuItem(child: Text("French".tr)),DropdownMenuItem(child: Text("English".tr))], onChanged: (v){}),
           TextButton(
               onPressed: () {
                 Get.updateLocale(Locale("ar", "AR"));
