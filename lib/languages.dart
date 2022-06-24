@@ -6,7 +6,7 @@ class Languages extends Translations {
         'en_GB': {
           'Choose Section:': 'Choose Section:',
           "Information Technology": "Information Technology",
-          "Information Technology - not available": "Information Technology - not available",
+          "Information Technology (not official)": "Information Technology (not official)",
           "Information Technology - old": "Information Technology - old",
           "Technology": "Technology",
           "Economy & Management": "Economy & Management",
@@ -40,7 +40,7 @@ class Languages extends Translations {
         'fr_FR': {
           'Choose Section:': 'Choisissez votre Section:',
           "Information Technology": "Informatique",
-          "Information Technology - not available": "Informatique - non disponible",
+          "Information Technology (not official)": "Informatique (non officiel)",
           "Information Technology - old": "Informatique Ancien Regime",
           "Technology": "Techniques",
           "Economy & Management": "Economie et Gestion",
@@ -74,7 +74,7 @@ class Languages extends Translations {
         'ar_AR': {
           'Choose Section:': 'إختر شعبتك:',
           "Information Technology": "علوم الإعلامية",
-          "Information Technology - not available": "علوم الإعلامية - غير متوفر",
+          "Information Technology (not official)": "علوم الإعلامية (  غير رسمي)",
           "Information Technology - old": "علوم الإعلامية - نضام قديم",
           "Technology": "علوم تقنية",
           "Economy & Management": "اقتصاد و تصرف",
@@ -102,7 +102,7 @@ class Languages extends Translations {
           "Sport-SP": "إختصاص رياضي",
           "Physical Edu": "تربية بدنية",
           "Calculate": "احسب",
-          "FG:": ":الصيغة الإجمالية",
+          "FG:": "الصيغة الإجمالية :",
           "Section: ": "الشعبة: ",
         },
       };
