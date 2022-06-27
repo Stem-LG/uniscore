@@ -29,6 +29,7 @@ class ScoreController extends GetxController {
   void calculateScore({required String section}) {
     switch (section) {
       case 'info':
+        //hi
         score.value = grades["average"]! * 4 + grades["math"]! * 1.5 + grades["algorithms"]! * 1.5 + grades["physics"]! * 0.5 + grades["sti"]! * 0.5 + grades["french"]! + grades["english"]!;
         break;
       case 'info-old':
