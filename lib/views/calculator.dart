@@ -14,7 +14,7 @@ class CalculatorPage extends StatelessWidget {
     List<Widget> Fields = [];
     String sectionName = "Default";
     if (Get.currentRoute == "/info") {
-      sectionName = "Information Technology (not official)".tr;
+      sectionName = "Information Technology".tr;
       Fields = [
         NumberField(
             label: "Average".tr,
