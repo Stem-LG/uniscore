@@ -2,7 +2,7 @@ import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 
 class ScoreController extends GetxController {
-  Map<String, int> grades = {
+  Map<String, double> grades = {
     "average": 0,
     "arab": 0,
     "french": 0,

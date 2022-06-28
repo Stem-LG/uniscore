@@ -19,37 +19,37 @@ class CalculatorPage extends StatelessWidget {
         NumberField(
             label: "Average".tr,
             onChange: (v) {
-              scoreC.grades["average"] = int.parse(v);
+              scoreC.grades["average"] = double.parse(v);
             }),
         NumberField(
             label: "Math".tr,
             onChange: (v) {
-              scoreC.grades["math"] = int.parse(v);
+              scoreC.grades["math"] = double.parse(v);
             }),
         NumberField(
             label: "Algorithms".tr,
             onChange: (v) {
-              scoreC.grades["algorithms"] = int.parse(v);
+              scoreC.grades["algorithms"] = double.parse(v);
             }),
         NumberField(
             label: "Physics".tr,
             onChange: (v) {
-              scoreC.grades["physics"] = int.parse(v);
+              scoreC.grades["physics"] = double.parse(v);
             }),
         NumberField(
             label: "STI".tr,
             onChange: (v) {
-              scoreC.grades["sti"] = int.parse(v);
+              scoreC.grades["sti"] = double.parse(v);
             }),
         NumberField(
             label: "French".tr,
             onChange: (v) {
-              scoreC.grades["french"] = int.parse(v);
+              scoreC.grades["french"] = double.parse(v);
             }),
         NumberField(
             label: "English".tr,
             onChange: (v) {
-              scoreC.grades["english"] = int.parse(v);
+              scoreC.grades["english"] = double.parse(v);
             })
       ];
     } else if (Get.currentRoute == "/info-old") {
@@ -58,42 +58,42 @@ class CalculatorPage extends StatelessWidget {
         NumberField(
             label: "Average".tr,
             onChange: (v) {
-              scoreC.grades["average"] = int.parse(v);
+              scoreC.grades["average"] = double.parse(v);
             }),
         NumberField(
             label: "Math".tr,
             onChange: (v) {
-              scoreC.grades["math"] = int.parse(v);
+              scoreC.grades["math"] = double.parse(v);
             }),
         NumberField(
             label: "Algorithms".tr,
             onChange: (v) {
-              scoreC.grades["algorithms"] = int.parse(v);
+              scoreC.grades["algorithms"] = double.parse(v);
             }),
         NumberField(
             label: "Physics".tr,
             onChange: (v) {
-              scoreC.grades["physics"] = int.parse(v);
+              scoreC.grades["physics"] = double.parse(v);
             }),
         NumberField(
             label: "TIC".tr,
             onChange: (v) {
-              scoreC.grades["tic"] = int.parse(v);
+              scoreC.grades["tic"] = double.parse(v);
             }),
         NumberField(
             label: "DataBases".tr,
             onChange: (v) {
-              scoreC.grades["db"] = int.parse(v);
+              scoreC.grades["db"] = double.parse(v);
             }),
         NumberField(
             label: "French".tr,
             onChange: (v) {
-              scoreC.grades["french"] = int.parse(v);
+              scoreC.grades["french"] = double.parse(v);
             }),
         NumberField(
             label: "English".tr,
             onChange: (v) {
-              scoreC.grades["english"] = int.parse(v);
+              scoreC.grades["english"] = double.parse(v);
             })
       ];
     } else if (Get.currentRoute == "/science") {
@@ -102,32 +102,32 @@ class CalculatorPage extends StatelessWidget {
         NumberField(
             label: "Average".tr,
             onChange: (v) {
-              scoreC.grades["average"] = int.parse(v);
+              scoreC.grades["average"] = double.parse(v);
             }),
         NumberField(
             label: "Math".tr,
             onChange: (v) {
-              scoreC.grades["math"] = int.parse(v);
+              scoreC.grades["math"] = double.parse(v);
             }),
         NumberField(
             label: "Physics".tr,
             onChange: (v) {
-              scoreC.grades["physics"] = int.parse(v);
+              scoreC.grades["physics"] = double.parse(v);
             }),
         NumberField(
             label: "Science".tr,
             onChange: (v) {
-              scoreC.grades["science"] = int.parse(v);
+              scoreC.grades["science"] = double.parse(v);
             }),
         NumberField(
             label: "French".tr,
             onChange: (v) {
-              scoreC.grades["french"] = int.parse(v);
+              scoreC.grades["french"] = double.parse(v);
             }),
         NumberField(
             label: "English".tr,
             onChange: (v) {
-              scoreC.grades["english"] = int.parse(v);
+              scoreC.grades["english"] = double.parse(v);
             })
       ];
     } else if (Get.currentRoute == "/tech") {
@@ -136,32 +136,32 @@ class CalculatorPage extends StatelessWidget {
         NumberField(
             label: "Average".tr,
             onChange: (v) {
-              scoreC.grades["average"] = int.parse(v);
+              scoreC.grades["average"] = double.parse(v);
             }),
         NumberField(
             label: "Technology".tr,
             onChange: (v) {
-              scoreC.grades["algorithms"] = int.parse(v);
+              scoreC.grades["algorithms"] = double.parse(v);
             }),
         NumberField(
             label: "Math".tr,
             onChange: (v) {
-              scoreC.grades["math"] = int.parse(v);
+              scoreC.grades["math"] = double.parse(v);
             }),
         NumberField(
             label: "Physics".tr,
             onChange: (v) {
-              scoreC.grades["physics"] = int.parse(v);
+              scoreC.grades["physics"] = double.parse(v);
             }),
         NumberField(
             label: "French".tr,
             onChange: (v) {
-              scoreC.grades["french"] = int.parse(v);
+              scoreC.grades["french"] = double.parse(v);
             }),
         NumberField(
             label: "English".tr,
             onChange: (v) {
-              scoreC.grades["english"] = int.parse(v);
+              scoreC.grades["english"] = double.parse(v);
             })
       ];
     } else if (Get.currentRoute == "/math") {
@@ -170,32 +170,32 @@ class CalculatorPage extends StatelessWidget {
         NumberField(
             label: "Average".tr,
             onChange: (v) {
-              scoreC.grades["average"] = int.parse(v);
+              scoreC.grades["average"] = double.parse(v);
             }),
         NumberField(
             label: "Math".tr,
             onChange: (v) {
-              scoreC.grades["math"] = int.parse(v);
+              scoreC.grades["math"] = double.parse(v);
             }),
         NumberField(
             label: "Physics".tr,
             onChange: (v) {
-              scoreC.grades["physics"] = int.parse(v);
+              scoreC.grades["physics"] = double.parse(v);
             }),
         NumberField(
             label: "science".tr,
             onChange: (v) {
-              scoreC.grades["science"] = int.parse(v);
+              scoreC.grades["science"] = double.parse(v);
             }),
         NumberField(
             label: "French".tr,
             onChange: (v) {
-              scoreC.grades["french"] = int.parse(v);
+              scoreC.grades["french"] = double.parse(v);
             }),
         NumberField(
             label: "English".tr,
             onChange: (v) {
-              scoreC.grades["english"] = int.parse(v);
+              scoreC.grades["english"] = double.parse(v);
             })
       ];
     } else if (Get.currentRoute == "/lettres") {
@@ -204,32 +204,32 @@ class CalculatorPage extends StatelessWidget {
         NumberField(
             label: "Average".tr,
             onChange: (v) {
-              scoreC.grades["average"] = int.parse(v);
+              scoreC.grades["average"] = double.parse(v);
             }),
         NumberField(
             label: "Arabic".tr,
             onChange: (v) {
-              scoreC.grades["arab"] = int.parse(v);
+              scoreC.grades["arab"] = double.parse(v);
             }),
         NumberField(
             label: "Philosophy".tr,
             onChange: (v) {
-              scoreC.grades["physics"] = int.parse(v);
+              scoreC.grades["physics"] = double.parse(v);
             }),
         NumberField(
             label: "His/Geo".tr,
             onChange: (v) {
-              scoreC.grades["his/geo"] = int.parse(v);
+              scoreC.grades["his/geo"] = double.parse(v);
             }),
         NumberField(
             label: "French".tr,
             onChange: (v) {
-              scoreC.grades["french"] = int.parse(v);
+              scoreC.grades["french"] = double.parse(v);
             }),
         NumberField(
             label: "English".tr,
             onChange: (v) {
-              scoreC.grades["english"] = int.parse(v);
+              scoreC.grades["english"] = double.parse(v);
             })
       ];
     } else if (Get.currentRoute == "/ecogest") {
@@ -238,37 +238,37 @@ class CalculatorPage extends StatelessWidget {
         NumberField(
             label: "Average".tr,
             onChange: (v) {
-              scoreC.grades["average"] = int.parse(v);
+              scoreC.grades["average"] = double.parse(v);
             }),
         NumberField(
             label: "Economy".tr,
             onChange: (v) {
-              scoreC.grades["economy"] = int.parse(v);
+              scoreC.grades["economy"] = double.parse(v);
             }),
         NumberField(
             label: "Management".tr,
             onChange: (v) {
-              scoreC.grades["management"] = int.parse(v);
+              scoreC.grades["management"] = double.parse(v);
             }),
         NumberField(
             label: "Math".tr,
             onChange: (v) {
-              scoreC.grades["math"] = int.parse(v);
+              scoreC.grades["math"] = double.parse(v);
             }),
         NumberField(
             label: "His/Geo".tr,
             onChange: (v) {
-              scoreC.grades["his/geo"] = int.parse(v);
+              scoreC.grades["his/geo"] = double.parse(v);
             }),
         NumberField(
             label: "French".tr,
             onChange: (v) {
-              scoreC.grades["french"] = int.parse(v);
+              scoreC.grades["french"] = double.parse(v);
             }),
         NumberField(
             label: "English".tr,
             onChange: (v) {
-              scoreC.grades["english"] = int.parse(v);
+              scoreC.grades["english"] = double.parse(v);
             })
       ];
     } else if (Get.currentRoute == "/sport") {
@@ -277,37 +277,37 @@ class CalculatorPage extends StatelessWidget {
         NumberField(
             label: "Average".tr,
             onChange: (v) {
-              scoreC.grades["average"] = int.parse(v);
+              scoreC.grades["average"] = double.parse(v);
             }),
         NumberField(
             label: "Science".tr,
             onChange: (v) {
-              scoreC.grades["science"] = int.parse(v);
+              scoreC.grades["science"] = double.parse(v);
             }),
         NumberField(
             label: "Sport-SP".tr,
             onChange: (v) {
-              scoreC.grades["physics"] = int.parse(v);
+              scoreC.grades["physics"] = double.parse(v);
             }),
         NumberField(
             label: "Physical Edu".tr,
             onChange: (v) {
-              scoreC.grades["science"] = int.parse(v);
+              scoreC.grades["science"] = double.parse(v);
             }),
         NumberField(
             label: "Philosophy".tr,
             onChange: (v) {
-              scoreC.grades["philosophy"] = int.parse(v);
+              scoreC.grades["philosophy"] = double.parse(v);
             }),
         NumberField(
             label: "French".tr,
             onChange: (v) {
-              scoreC.grades["french"] = int.parse(v);
+              scoreC.grades["french"] = double.parse(v);
             }),
         NumberField(
             label: "English".tr,
             onChange: (v) {
-              scoreC.grades["english"] = int.parse(v);
+              scoreC.grades["english"] = double.parse(v);
             })
       ];
     }
